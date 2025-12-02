@@ -11,10 +11,8 @@ class StofDoctrineExtensionsBundle extends Bundle
 {
     /**
      * {@inheritdoc}
-     *
-     * @return void
      */
-    public function build(ContainerBuilder $container)
+    public function build(ContainerBuilder $container): void
     {
         $container->addCompilerPass(new ValidateExtensionConfigurationPass());
         $container->addCompilerPass(new ReaderPass());

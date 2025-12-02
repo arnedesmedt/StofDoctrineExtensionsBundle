@@ -90,10 +90,7 @@ class StofDoctrineExtensionsExtension extends Extension
     /** @var list<string> */
     private array $documentManagers = array();
 
-    /**
-     * @return void
-     */
-    public function load(array $configs, ContainerBuilder $container)
+    public function load(array $configs, ContainerBuilder $container): void
     {
         $processor = new Processor();
         $configuration = new Configuration();
